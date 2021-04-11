@@ -1,6 +1,3 @@
-/* #highlight{
-    background-color: yellow;
-} */
 
 span{
    
@@ -21,7 +18,7 @@ body .bodyover{
     background-color: rgba(5, 7, 2, 0.6);
     height: 100%;
     padding: 1px;
-    /* display: flex; */
+    
     
 }
 
@@ -38,11 +35,11 @@ table tr {
     
 }
 
-
+/* 
 table tr td , table th{
     /* width: 10px !important; */
     
-}
+} */
 
 table tr:hover{
     color: #2a2625 !important;
