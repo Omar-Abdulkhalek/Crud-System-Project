@@ -27,21 +27,23 @@ else{
 // function that will add proucts 
 function addProducts() {
 
-
+    
 
     // to add product
     if(productAddUpdateBtn.innerHTML == "Add Product")
     {
+                
         if (checkInputs() == true) {
+            
             // object that contain all details of the same product
             var product = {
-                name: productNAME.value,
-                price: productPrice.value,
-                category: productCategory.value,
-                desc: productDesc.value
-    
-            }
-    
+            name: productNAME.value,
+            price: productPrice.value,
+            category: productCategory.value,
+            desc: productDesc.value
+
+        }
+
             productsContainer.push(product);
             localStorage.setItem("productsList" , JSON.stringify(productsContainer));
             clearForm();
@@ -51,6 +53,7 @@ function addProducts() {
         else{
             window.alert("Sorry All Fields Are Required");
         }
+       
     }
 
 
@@ -110,7 +113,7 @@ function displayData() {
                 <td><button class="btn btn-danger " onclick="deleteProduct(${i})">Delete</button></td>
                 </tr>
 
-                `
+            `
     }
     document.getElementById("demo").innerHTML = copya;
 }
