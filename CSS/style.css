@@ -13,23 +13,35 @@ body{
     background-position: center center;
     background-size: cover;
     background-attachment:fixed ;
-    height: 200vh;
+    
+    
 }
 
 body .bodyover{
     background-color: rgba(5, 7, 2, 0.6);
     height: 100%;
-    overflow: hidden;
+    padding: 1px;
+    /* display: flex; */
+    
 }
 
 table{
     color: rgb(251, 246, 246) !important;
     background-color: rgba(43, 79, 96 , .5) !important;
     border-radius: 10px;
+    
 }
 
 table tr {
     transition: all .5s;
+    /* width: 15px !important; */
+    
+}
+
+
+table tr td , table th{
+    /* width: 10px !important; */
+    
 }
 
 table tr:hover{
