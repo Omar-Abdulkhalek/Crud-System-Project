@@ -122,13 +122,18 @@ function displayData() {
 // function that will delete the product(object)
 function deleteProduct(index) {
 
+    var check = confirm("DO You Want To Delete This Product")
+    if(check == true){
+        productsContainer.splice(index, 1);
+        localStorage.setItem("productsList" , JSON.stringify(productsContainer));
+        
+        
+        // redisplay the array after deleting the product object from it
+        displayData();
+    }else{
+        displayData();
+    }
     
-    productsContainer.splice(index, 1);
-    localStorage.setItem("productsList" , JSON.stringify(productsContainer));
-    
-    
-    // redisplay the array after deleting the product object from it
-    displayData();
 
 
 }
